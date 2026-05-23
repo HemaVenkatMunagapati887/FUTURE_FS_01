@@ -1,0 +1,127 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  background: rgba(255, 255, 255, 0.02); /* Very transparent */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Very subtle white border */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Frosted glass top edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-color: rgba(138, 43, 226, 0.4);
+  background: rgba(138, 43, 226, 0.05); /* Slight purple tint on hover */
+}
+
+.project-content {
+  padding: 2.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.project-icon-box {
+  width: 50px;
+  height: 50px;
+  background: rgba(138, 43, 226, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a855f7;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-icon-box {
+  background: rgba(138, 43, 226, 0.25);
+  transform: scale(1.05);
+}
+
+.project-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.icon-link {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+}
+
+.project-desc {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  padding: 0.4rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  color: #00ced1; /* Teal/Green color matching screenshot */
+  border: 1px solid rgba(0, 206, 209, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.project-card:hover .tech-tag {
+  border-color: rgba(0, 206, 209, 0.5);
+  background: rgba(0, 206, 209, 0.05);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
