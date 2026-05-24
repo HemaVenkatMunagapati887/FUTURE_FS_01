@@ -113,3 +113,30 @@
     padding: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-info, .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .info-item {
+    gap: 1rem;
+  }
+
+  .icon-box {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+

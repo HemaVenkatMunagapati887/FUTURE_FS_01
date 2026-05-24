@@ -120,8 +120,39 @@
   background: rgba(0, 206, 209, 0.05);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-desc {
+    font-size: 0.88rem;
+  }
+
+  .project-icon-box {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .icon-link {
+    width: 34px;
+    height: 34px;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+

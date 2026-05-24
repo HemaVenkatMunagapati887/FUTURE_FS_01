@@ -121,4 +121,37 @@
   .skills-box {
     padding: 1.5rem;
   }
+
+  .tech-pills-container {
+    gap: 0.7rem;
+  }
+
+  .tech-pill {
+    padding: 0.6rem 1rem;
+  }
+
+  .pill-name {
+    font-size: 0.85rem;
+  }
 }
+
+@media (max-width: 480px) {
+  .skills-box {
+    padding: 1.2rem;
+  }
+
+  .skills-box-title {
+    font-size: 1rem;
+  }
+
+  .tech-pills-container {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .tech-pill {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+

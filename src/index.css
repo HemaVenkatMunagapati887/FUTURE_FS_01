@@ -204,7 +204,13 @@ button {
 }
 
 @media (max-width: 768px) {
-  .section-padding { padding: 4rem 0; }
-  .section-title { font-size: 2rem; margin-bottom: 2rem; }
+  .section-padding { padding: 3.5rem 0; }
+  .section-title { font-size: 1.75rem; margin-bottom: 1.5rem; }
   .container { padding: 0 1rem; }
+  .btn { padding: 0.7rem 1.2rem; font-size: 0.9rem; }
 }
+
+@media (max-width: 480px) {
+  .section-title { font-size: 1.5rem; }
+}
+

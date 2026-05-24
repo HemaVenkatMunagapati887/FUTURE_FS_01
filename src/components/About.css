@@ -122,6 +122,14 @@
     grid-template-columns: 1fr;
   }
   
+  .about-bio {
+    padding: 2rem;
+  }
+
+  .bio-title {
+    font-size: 1.4rem;
+  }
+
   .service-card:hover {
     transform: translateY(-5px);
   }
@@ -132,3 +140,26 @@
     gap: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .about-bio {
+    padding: 1.5rem;
+  }
+
+  .bio-title {
+    font-size: 1.2rem;
+  }
+
+  .stat-num {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .about-stats {
+    justify-content: space-around;
+  }
+}
+

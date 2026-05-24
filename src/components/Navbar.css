@@ -88,6 +88,21 @@
   display: none;
 }
 
+.nav-backdrop {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(2px);
+  }
+}
+
 @media (max-width: 900px) {
   .mobile-toggle {
     display: block;
@@ -113,6 +128,7 @@
     align-items: center;
     gap: 2rem;
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
   }
 
   .nav-links.active {
